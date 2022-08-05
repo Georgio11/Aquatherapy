@@ -1,0 +1,904 @@
+/* =====RESET======================================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1.3;
+    font-size: 14px;
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+    /* line-height: 140% */
+}
+
+body {
+    background-color: #162831;
+}
+
+body._lock {
+    overflow: hidden;
+}
+
+._ibg {
+    position: relative;
+}
+
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+/* ================================================================================================= */
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+._container {
+    max-width: 1296px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 20px;
+}
+
+/* =====HEADER====================================================================================== */
+.header {
+    background-color: #162831;
+    position: fixed;
+    z-index: 50;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.header__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-right: 30px;
+    z-index: 100;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu__item {
+    padding: 5px;
+    margin-right: 40px;
+}
+
+.menu__link {
+    transition: 0.3s;
+}
+
+.menu__link:hover {
+    opacity: 0.5;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.header__button {
+    margin-left: 30px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.button {
+    display: block;
+    padding: 9px 15px;
+    background-color: #018ABE;
+    border-radius: 3px;
+    width: 180px;
+    font-size: 13px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.button:hover {
+    opacity: 0.5;
+}
+
+.header__menu-icon {
+    display: none;
+}
+
+/* =====MAIN====================================================================================== */
+.main-block {
+    padding: 140px 0 50px 0;
+}
+
+.main-block__bg {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/basic.jpg) center / cover no-repeat;
+    max-width: 1296px;
+    height: 600px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.main-subtitle {
+    display: flex;
+    max-width: 429px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.main__block-title {
+    max-width: 587px;
+    margin: 0 auto;
+}
+
+.subtitle__messiri {
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 0 66px;
+    text-align: center;
+}
+
+.main__block-title {
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+}
+
+.title-messiri {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    padding: 100px 0;
+    justify-content: center;
+}
+
+.title__messiri-h2 {
+    padding: 0 45px;
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+}
+
+.cards {
+    height: 540px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.first-section {
+    width: 33.3333%;
+    margin-right: 24px;
+}
+
+.first-section__card {
+    position: relative;
+    background: url(../img/underwatter.jpg) center / cover no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card__name {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    max-width: 70%;
+}
+
+.card__rectangel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: #018ABE;
+    border-radius: 0 0 10px 10px;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.first-section__card:hover .card__rectangel {
+    opacity: 1;
+}
+
+.second-section {
+    width: 66.6666%;
+}
+
+.windows {
+    width: 100%;
+    height: 100%;
+}
+
+.window {
+    padding: 12px 0;
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+
+.window:last-child {
+    padding-bottom: 0;
+}
+
+.window:first-child {
+    padding-top: 0;
+}
+
+.card {
+    margin-right: 24px;
+    position: relative;
+    background: url(../img/underwatter.jpg) center / cover no-repeat;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover .card__rectangel {
+    opacity: 1;
+}
+
+.card__name-small {
+    bottom: 30px;
+    left: 40px;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.about {
+    max-width: 1076px;
+    margin: 0 auto;
+}
+
+.about__title {
+    padding: 150px 0 100px 0;
+}
+
+.content-about__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.content-about__block:last-child {
+    margin-bottom: 50px;
+}
+
+.content-about-img {
+    background: url(../img/underwatter_black.jpg) center / cover no-repeat;
+    width: 47%;
+    height: 365px;
+    border-radius: 10px;
+}
+
+.content-about__block-text {
+    width: 50%;
+}
+
+.content-about__block-text-1 {
+    padding-right: 84px;
+}
+
+.content-about__block-text-2 {
+    padding-left: 84px;
+}
+
+.title-montserrat {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.content-about__text p {
+    margin-bottom: 15px;
+}
+
+.content-about__text p:last-child {
+    margin-bottom: 0;
+}
+
+.price__container {
+    max-width: 1076px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 30px;
+}
+
+.prise__block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.prise__block-list {
+    width: 50%;
+    padding-right: 104px;
+}
+
+.prise__block-certificate {
+    width: 50%;
+}
+
+.certificate__img {
+    background: url(../img/certificate.jpg) center / cover no-repeat;
+    width: 100%;
+    height: 396px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.price__line-icon {
+    display: flex;
+}
+
+.price__line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 31px;
+}
+
+.servise {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 40px 0 20px;
+}
+
+.price__value {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.certificate__text {
+    font-weight: 700;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+}
+
+.map__container {
+    display: flex;
+    padding: 100px 20px;
+}
+
+.position {
+    width: 878px;
+    height: 604px;
+    margin-right: 24px;
+}
+
+.position__img {
+    background: url(../img/mape.jpg) center / cover no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.places {
+    height: 604px;
+    width: 392px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.places__card {
+    width: 392px;
+    height: 48.3%;
+    background-color: #018ABE;
+    border-radius: 10px;
+    padding: 45px 35px 0 45px;
+}
+
+.location {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.location__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+
+.location__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px;
+}
+
+.adress__img {
+    margin-right: 23px;
+}
+
+.places__card-title {
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 21px;
+}
+
+.card-button {
+    background-color: #fff;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #018ABE;
+    padding: 9px 15px;
+    transition: 0.3s;
+}
+
+.card-button:hover {
+    opacity: 0.5;
+}
+
+.footer__block {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiper-container {
+    padding: 0px 20px;
+    max-width: 1540px;
+    width: 100%;
+    margin: 0 auto;
+    /* overflow: hidden; */
+
+}
+.swiper__wrapper {
+    padding-bottom: 60px;
+}
+.swiper__body {
+    max-width: 636px;
+    background-color: #018ABE;
+    border-radius: 10px;
+    padding: 60px 50px;
+    margin: 0 auto;
+}
+
+.swiper__title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.swiper__text p {
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.swiper__text p:last-child {
+    margin-bottom: 0;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: -60px !important;
+    width: auto !important;
+    left: 50% !important;
+    margin: 0 0 0 -48px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 16px !important;
+    height: 16px !important;
+    background: #FFFFFF !important;
+    opacity: 0.4 !important;
+    border-radius: 3px !important;
+    transition: all 0.2s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+}
+
+/* =====MEDIA====================================================================================== */
+@media (max-height: 700px) {
+    .main-block__bg {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 901px;
+    }
+
+    .card__name {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 768px;
+    }
+
+    .cards {
+        height: 810px;
+        display: block;
+    }
+
+    .first-section {
+        width: 100%;
+        height: 270px;
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .card__name {
+        font-size: 20px;
+    }
+
+    .second-section {
+        width: 100%;
+        height: 66.666%;
+    }
+
+    .content-about__block-text-1 {
+        padding-right: 50px;
+    }
+
+    .content-about__block-text-2 {
+        padding-left: 50px;
+    }
+
+    .prise__block-list {
+        width: 60%;
+        padding-right: 70px;
+    }
+
+    .prise__block-certificate {
+        width: 40%;
+    }
+
+    .certificate__img {
+        height: 300px;
+    }
+
+    .certificate__text {
+        font-size: 18px;
+    }
+
+    .map__container {
+        display: block;
+    }
+
+    .places {
+        flex-direction: row;
+        width: 100%;
+        height: 290px;
+        justify-content: space-between;
+    }
+
+    .places__card {
+        width: 48%;
+        height: 100%;
+    }
+
+    .position {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .map__container {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 540px;
+    }
+
+    .header__logo {
+        margin: 0;
+    }
+
+    .header__menu-icon {
+        z-index: 100;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .header__menu-icon span,
+    .header__menu-icon::after,
+    .header__menu-icon::before {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #fff;
+    }
+
+    .header__menu-icon::after,
+    .header__menu-icon::before {
+        content: "";
+    }
+
+    .header__menu-icon::before {
+        top: 0;
+    }
+
+    .header__menu-icon::after {
+        bottom: 0;
+    }
+
+    .header__menu-icon span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+
+    .menu__list {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 150px 30px 30px 15px;
+        transition: left 0.3s;
+        overflow: auto;
+    }
+
+    .menu__list::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 120px;
+        background-color: #162831;
+    }
+
+    .menu__list._active {
+        left: 0;
+    }
+
+    .menu__list>li {
+        margin-bottom: 30px;
+    }
+
+    .menu-burger__link {
+        font-size: 24px;
+    }
+
+    .header__menu-icon._active span {
+        transform: scale(0) translate(0px, -50%);
+    }
+
+    .header__menu-icon._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    .header__menu-icon._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    .content-about__block {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .content-about__block-text {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .content-about-img {
+        width: 100%;
+        order: 2;
+    }
+
+    .title-messiri {
+        padding: 50px 0;
+    }
+
+    .about__title {
+        padding: 100px 0 50px 0;
+    }
+
+    .content-about__block-text-1 {
+        padding-right: 0;
+    }
+
+    .content-about__block-text-2 {
+        order: 1;
+        padding-left: 0;
+    }
+
+    .content-about__block:last-child {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .price__container {
+        padding: 0 20px;
+    }
+
+    .prise__block {
+        display: block;
+    }
+
+    .prise__block-list {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .prise__block-certificate {
+        width: 100%;
+    }
+
+    .places {
+        min-height: 604px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .places__card {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 45px;
+    }
+
+    .places__card:last-child {
+        margin-bottom: 0;
+    }
+
+    .position {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .map__container {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .main-subtitle {
+        margin: 0 auto;
+        max-width: 300px;
+        padding-bottom: 15px;
+    }
+
+    .subtitle__messiri {
+        padding: 0 20px;
+        font-size: 20px;
+    }
+
+    .main__block-title {
+        font-size: 48px;
+    }
+
+    .cards {
+        height: 1465px;
+    }
+
+    .second-section {
+        width: 100%;
+        height: 80%;
+    }
+
+    .window {
+        display: block;
+        padding: 0;
+    }
+
+    .windows {
+        display: block;
+    }
+
+    .card {
+        height: 270px;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .title-messiri {
+        padding: 30px 0;
+    }
+
+    .about__title {
+        padding: 100px 0 30px 0;
+    }
+
+    .title__messiri-h2 {
+        padding: 0 30px;
+        font-size: 34px;
+    }
+
+    .content-about-img {
+        height: 300px;
+    }
+
+    .footer__block {
+        display: block;
+    }
+
+    .footer__copy {
+        margin-bottom: 15px;
+    }
+}
